@@ -1,0 +1,352 @@
+React
+*****
+    ReactJS is the javaScript library
+
+    React library given by facebook
+
+    ReactJS, used to develop web applications
+
+    ReactJS current version is "18.x"
+
+    we will develop web applications in two ways.
+
+    1)JSX
+
+    2)TSX
+
+    JSX stands for JavaScript and XML
+
+    TSX stands for TypeScript and XML
+
+    JavaScript is the "Scripting Language"
+
+    TypeScript is the "Programmmig Language" 
+
+    JavaScript wont follows the "OOPs"
+
+    TypeScript is follows the "OOPs"
+
+    In General, Browsers can,t understand the XML.
+
+    so, we should convert XML to Equalent JavaScript.
+    
+    Babel is the inbuild tool of ReactJS, used to convert XML to Equalent javaScript
+
+    React Internally follows the virtal DOM.
+
+    Because of virtual DOM React application are faster  compared to Angular applications
+
+    Angular application follows Real DOM   
+
+    Software Installation
+    *********************
+
+    1) Download and install NodeJS
+        NodeJS internally containes following tools
+            1) node
+            2) npm
+            3) npx
+        node tools, used to execute the JavaScript
+        npm stands for "node packaging manager"
+        npm helps to install the ReactJS
+        npx stands for "node packaging runner"
+        npx creates the environment to build "react applications"
+
+    2)  install yarn tools
+        yarn tool given facebook
+        yarn tool, used to download the "libraries" / "modules"
+        yarn tool Installation is "command based" Installation 
+
+        > npm install --location=global yarn   
+
+     3) install create-react-app
+
+        create-react-app is the tool
+        create-react-app tool used to create the react applications
+        create-react-app tool Installation is command based Installation
+
+        > npm install --location=global create-react-app  
+
+    4) Download and install Visual Studio Code
+
+    step to create react application
+    ********************************
+
+    > npx create-react-app first-app    
+    > cd first-app
+    > yarn start / npm start
+
+    The Default Port No of react application is 3000
+
+    Directory structure of React Application 
+    *****************************************
+    node_modules
+        node_modules containes libraries
+        node_modules helps to create and execute the react applications
+
+    pubilc/index.html
+        react starts the execution from "index"
+        "index.html" file is the main template in react application
+        "index.html" containes "div" whose id is "root"
+
+    src 
+        This folder used to deploy the components
+        App.js file is the Default component
+        App.css file is the Style Sheet for App Component
+        App.test.js is the unit test case file App Component
+
+    src/index.css
+        used to defined the global styles
+        These styles applicable to app components
+
+    src/index.js
+        index.js file, used to register the components
+        index.js file will link/handover our component to main template(index.html)
+
+    Package.json
+        Package.json file containes
+        libraries information
+
+    Components
+    ***********
+        Reuseable Portion of Complex UI is called Component
+        We can create More Than one components
+        We can provide communication Between components
+        Components are Reuseable
+        We can include one Component to other Component
+        we can create Components in two ways
+        1)Functional Level components (Stateless Components)
+        2)class Level Components (Statefull Components)
+        
+
+
+    Single Page Application 
+    ***********************
+    Loading one component to another component without refreshing
+    is called as Single Page Application .    
+
+    navigation of one component to another component is Single Page 
+    Application CAlled as "Routing".
+
+    we will implement Single Page Application with following library
+
+    react-router-dom@6
+
+
+    axios library, used to make rest api calls
+    ex: GET, POST, PUT, DELETE, HEAD......
+    To install axios in linux : yarn add axios  
+    To install axios in windows : npm install axios
+
+    200 code means : positive response;
+
+    State Management
+    *****************************************
+    To reduce the complexity of communication between components, we have 
+    state Management
+
+    we will implement state Management in two ways.
+
+    1)context API
+
+        createContext()
+
+        useContex()
+
+    2)Redux
+
+    Integration of Redux to React Application
+    **************************************************
+    1) create the react application
+
+            > npx create-react-app redux-ex3
+
+    2) switch to redux-ex3
+    
+            > cd redux-ex3
+
+    3) download the node modules
+
+            > redux
+
+            > react-redux
+
+            redux library used to create redux architecture
+
+            react-redux used to integrate redux architecture to react application 
+
+            yarn add redux react-redux  or npm install redux and npm install react-redux
+
+    4) create the reducer
+    ***************************************************
+    reducer-ex3
+            src
+                reducer
+                    reducer.js
+
+    *******************************************************
+
+    5) deploy reducer to "store" and make "store" availability to component
+
+        index.js
+
+    6) perform subscription and dispatch operations in App Component    
+
+
+
+    CRUD Appliction (MongoDB, ExpressJS, NodeJS, Redux Redux-Thunk, React)
+    ***********************************************************************************
+    MongoDB is NoSQL Database.
+
+    MongoDB is light weight Database.
+
+    MongoDB is Supports JSON.
+
+    MongoDB is by Default running on port No. 27017.
+
+    ****************************************************************************
+                SQL                                   NoSQL
+    ******************************************************************************
+
+    Ex.
+        oracle                                      MongoDB
+        MySQL
+        SQLserver
+
+        Database                                    Database   
+
+        table                                       collections
+
+        records                                     Documents
+
+        Primary key                                 _id
+        **********************************************************************************
+
+    MongoDB Atlas provides the cloud environment
+
+
+    Database details
+    ******************
+
+    Database name : mern_stack
+
+    collection name : products
+
+    user_name : admin
+
+    password : admin
+
+    url : mongodb+srv://admin:admin@sambait.s9lniuw.mongodb.net/?retryWrites=true&w=majority&appName=SambaIT
+
+
+
+
+    NodeJS
+    *****************
+
+    NodeJS backend technology
+
+    NodeJS used to connect to Databases
+
+    we will develop NodeJS Appliction with the help of javaScript
+
+    NodeJS supports modules / libraries
+
+
+    1) Express
+
+        express module use to develop rest api's
+
+    Ex.
+        GET
+        POST
+        PUT
+        DELETE
+        ------
+        ------
+        ------
+
+    2) MongoDB
+
+        mongodb module used to develop the mongodb database
+
+    3) Cors
+
+        Cors module used enable the "Cors" policy
+        
+
+    we will download above modules with the help of either "npm" or "yarn"
+
+    1) create the server directory
+
+    2) switch the server directory 
+        >cd server
+
+    3) download the node node_modules
+
+        =>express
+
+        =>mongodb
+
+        =>cors
+
+        > yarn add express mongodb cors           //for linux os, this command
+
+        > npm install express mongodb cors       //for windows os, this command
+
+    4) develop the rest api's
+
+        server.js
+
+    
+
+    Thunk Application
+    *********************************************************
+
+    1) create react application 
+
+        > npx create-react-app crud-app
+
+    2)switch to react application
+
+        > cd crud-app
+
+    3)download node modules
+
+        => redux             //npm install redux
+
+        => react-redux       //npm install react-redux
+
+        => redux-Thunk       //npm install redux-thunk
+
+        => axios             //npm install axios                   axios is use to connect to server
+
+        > npm install redux react-redux redux-thunk axios
+
+    import axios
+    axios used to make rest api calls
+    arrow function behaves like action 
+    inner arrow function used to connect to reducer
+    dispatch object used to carry the data from action to reducer
+    axios internally returns promises
+    async and await keywords are used to consume promises 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

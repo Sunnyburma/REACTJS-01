@@ -1,0 +1,4 @@
+//In GlobalSpace component-1 is storing the data and rest all component is accessing the data. 
+//how to create the GlobalSpace ?
+//To creating the GlobalSpace space by "createContext()" hook.
+//To use GlobalSpace by "useContext()" hook 
