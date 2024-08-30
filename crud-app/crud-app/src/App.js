@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import actions from "./actions/actions.js";
+import Error from "./Error.js";
+import Loading from "./loading.js";
+import Products from "./Products.js";
 
-function App() {
+const App = () => {
+  
+  const dispatch = useDispatch();
+  const result = useSelector(state=>state.reducer1);
+  const {loading, products, error} = result;
+  
+  useEffect(() => {
+    dispatch(actions());
+    
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+    {
+     //loading?(<div>{JSON.stringify(products)}</div>):(<Loading></Loading>)
+    
+   //error="network_error"?(<Error></Error>):(loading?(<div>{JSON.stringify(products)}</div>):(<Loading></Loading>))
 
+    error != "" ?(<Error>{error}</Error>):(loading?(<Products products={products}></Products>):(<Loading></Loading>))
+
+    }
+    </>
+  )
+}
 export default App;
